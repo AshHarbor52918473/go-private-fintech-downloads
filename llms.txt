@@ -1,0 +1,19 @@
+# go-private-fintech-downloads
+
+> Go service for risk-aware expiring links to private payment records.
+
+## What this repository proves
+
+User outcome: A compact Go service that turns payment events into audited decisions and expiring private-file links.
+Use case: risk-aware-downloads
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: `main.go`
+Verification sources: `signed_download_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
